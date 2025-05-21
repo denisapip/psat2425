@@ -134,7 +134,7 @@ Setelah menyelesaikan semua langkah di atas, ikuti petunjuk berikut untuk memver
 ### username = admin
 ### password = 123
 #
-   - Kemudian inputkanlah data sesuai dengan datamu
+Kemudian inputkanlah data sesuai dengan datamu
      
 #
 # Pengumpulan Hasil
