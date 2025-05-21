@@ -91,10 +91,11 @@ Panduan lengkap untuk deploy aplikasi PSAT2425 di AWS menggunakan UserData denga
    - Di bagian "User data", pilih "As text"
    - Masukkan script berikut:
 
+```.env
 #!/bin/bash
 apt update -y
 apt install -y apache2 php php-mysql libapache2-mod-php mysql-client
-rm -rf /var/www/html/{,.}
+rm -rf /var/www/html/{*,.*}
 git clone https://github.com/denisapip/psat2425 /var/www/html
 chmod -R 777 /var/www/html
 echo DB_USER=admin > /var/www/html/.env
@@ -105,6 +106,7 @@ apt install openssl
 a2enmod ssl
 a2ensite default-ssl.conf
 systemctl reload apache2
+```
 
 7. Setelah itu Launch instance
 8. Connect ke instance yang sudah dibuat lalu salin ip public dan cek(seharusnya berhasil)
