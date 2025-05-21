@@ -129,10 +129,10 @@ Setelah menyelesaikan semua langkah di atas, ikuti petunjuk berikut untuk memver
 
 3. **Hasil**:
    - Setelah berhasil akan muncul tampilan aplikasi psat2425
-     Jalankan dengan username dan password default berikut ini:
-     username = admin
-     password = 123
-     Kemudian inputkanlah data sesuai dengan datamu
+   - Jalankan dengan username dan password default berikut ini:
+     #username = admin
+     #password = 123
+   - Kemudian inputkanlah data sesuai dengan datamu
      
 #
 # Pengumpulan Hasil
