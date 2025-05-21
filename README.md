@@ -86,11 +86,12 @@ Panduan lengkap untuk deploy aplikasi PSAT2425 di AWS menggunakan UserData denga
 2. Name and tags: psatb(bebas)
 3. AMI: Ubuntu
 4. Pilih instance type t2.nano
-5. Pilih security group SG-ServerWeb yang sudah dibuat
-6. Di bagian "Configure Instance":
+5. Key pair pilih vockey
+6. Pilih security group SG-ServerWeb yang sudah dibuat
+7. Di bagian "Configure Instance":
    - Scroll ke bawah sampai menemukan bagian "Advanced Details"
    - Klik tombol kuning "Advanced Details" untuk memperluas
-   - Di bagian "User data", pilih "As text"
+   - Scroll ke bawah dan di bagian "User data", pilih "As text"
    - Masukkan script berikut:
 
 ```.env
