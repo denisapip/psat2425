@@ -36,7 +36,7 @@ Jalankan dengan username dan password default berikut ini
 
 Kemudian inputkanlah data sesuai dengan datamu
 
-# Panduan Deployment PSAT2425
+# Panduan Deployment psat2425
 
 ## Gambaran Umum
 Panduan lengkap untuk deploy aplikasi PSAT2425 di AWS menggunakan UserData dengan konfigurasi EC2 dan RDS yang tepat.
@@ -46,6 +46,7 @@ Panduan lengkap untuk deploy aplikasi PSAT2425 di AWS menggunakan UserData denga
 2. Akun GitHub
    
 ## Langkah 1: Persiapan Awal
+
 1. *Unduh File dari GitHub*  
     https://github.com/paknux/psat2425
    
@@ -67,6 +68,7 @@ Panduan lengkap untuk deploy aplikasi PSAT2425 di AWS menggunakan UserData denga
 ## Langkah 3: Setup RDS Database
 
 1. Buat RDS MySQL instance:
+   - Metode Pembuatan: Standard create
    - Engine: MySQL
    - Template: Free tier
    - DB cluster identifier: biankards(bebas)
@@ -109,17 +111,29 @@ systemctl reload apache2
 ```
 
 7. Setelah itu Launch instance
-8. Connect ke instance yang sudah dibuat lalu salin ip public dan cek(seharusnya berhasil)
-9. Jalankan dengan username dan password default berikut ini
-#
-### username = admin
-### password = 123
-#
 
-Kemudian inputkanlah data sesuai dengan datamu
+## Verifikasi Deployment
 
+Setelah menyelesaikan semua langkah di atas, ikuti petunjuk berikut untuk memverifikasi bahwa aplikasi berhasil terdeploy:
 
+1. **Dapatkan Public IP Instance**:
+   - Buka AWS EC2 Console
+   - Pilih instance yang baru dibuat
+   - Salin alamat **IPv4 Public IP** dari bagian detail instance
 
+2. **Akses Aplikasi**:
+   - Buka browser web
+   - Masukkan alamat berikut di address bar:
+     http://<public-ip-anda>
+   - Ganti `<public-ip-anda>` dengan IP yang disalin sebelumnya
+
+3. **Hasil**:
+   - Setelah berhasil akan muncul tampilan aplikasi psat2425
+     Jalankan dengan username dan password default berikut ini:
+     username = admin
+     password = 123
+     Kemudian inputkanlah data sesuai dengan datamu
+     
 #
 # Pengumpulan Hasil
 Catat Link repositry anda
