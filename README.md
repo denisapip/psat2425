@@ -128,8 +128,7 @@ Setelah menyelesaikan semua langkah di atas, ikuti petunjuk berikut untuk memver
    - Ganti `<public-ip-anda>` dengan IP yang disalin sebelumnya
 
 3. **Hasil**:
-   - Setelah berhasil akan muncul tampilan aplikasi psat2425
-   - Jalankan dengan username dan password default berikut ini
+Setelah berhasil akan muncul tampilan aplikasi psat2425 dan jalankan dengan username dan password default berikut ini
 #
 ### username = admin
 ### password = 123
